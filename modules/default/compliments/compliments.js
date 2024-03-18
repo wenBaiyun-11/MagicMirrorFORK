@@ -8,10 +8,10 @@ Module.register("compliments", {
 	// Module config defaults.
 	defaults: {
 		compliments: {
-			anytime: ["Hey there sexy!"],
-			morning: ["Good morning, handsome!", "Enjoy your day!", "How was your sleep?"],
-			afternoon: ["Hello, beauty!", "You look sexy!", "Looking good today!"],
-			evening: ["Wow, you look hot!", "You look nice!", "Hi, sexy!"],
+			anytime: ["Hello gorguese!"],
+			morning: ["Good morning!", "Did you forgot something?", "How was your sleep?"],
+			afternoon: ["sup, how's ya day?", "Feeling Cold Yet?", "Looking like a midnight snack!"],
+			evening: ["A cold breeze.", "Silence, A Friend!", "I just saw a Star."],
 			"....-01-01": ["Happy new year!"]
 		},
 		updateInterval: 30000,

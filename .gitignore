@@ -59,6 +59,7 @@ Temporary Items
 
 # Ignore all modules except the default modules.
 /modules/**
+!/modules/WB**
 !/modules/default
 !/modules/default/**
 !/modules/README.md**
@@ -67,7 +68,6 @@ Temporary Items
 /css/custom.css
 
 # Ignore users config file but keep the sample.
-/config/*
 !/config/config.js.sample
 
 # Vim
