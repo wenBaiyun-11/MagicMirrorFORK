@@ -25,6 +25,10 @@ class WBOpenWeatherMap extends WBProvider {
 		return 8;
 	}
 
+	helperResponce(data){
+
+	}
+
 	fetchWeather() {
 		var responseOk = null;
 		fetch(this.url).then(response => {

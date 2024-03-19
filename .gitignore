@@ -59,7 +59,7 @@ Temporary Items
 
 # Ignore all modules except the default modules.
 /modules/**
-!/modules/WB**
+!/modules/Wallberry**
 !/modules/default
 !/modules/default/**
 !/modules/README.md**

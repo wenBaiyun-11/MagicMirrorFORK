@@ -38,6 +38,17 @@ let config = {
 
 	modules: [
 		{
+			module: "WallberryTheme",
+			position: "fullscreen_below", // Required Position
+			config: {
+			  addBackgroundFade: ["top", "bottom"],
+			  backgroundOpacity: 0.6,
+			  autoDimOn: true,
+			  unsplashAccessKey: "C0Uw7Qrq1uvf_9Wug2buL4mCYC6AvD6qWvjqaZWkVxg", // REQUIRED
+			  collections: "9822150" // optional - leave empty for a random photo
+			}
+		},
+		{
 			module: "alert",
 		},
 		{
@@ -45,13 +56,18 @@ let config = {
 			position: "top_bar"
 		},
 		{
-			module: "clock",
-			position: "top_left"
+			module: "WallberryTheme/WB-clock",
+			position: "top_left",
+			config: {
+				localCityName: "Cebu City",
+			}
 		},
 		{
 			module: "calendar",
 			header: "Philippine Holidays",
 			position: "top_left",
+			animateIn: "slideInLeft",
+ 			animateOut: "slideOutLeft",
 			config: {
 				calendars: [
 					{
@@ -63,26 +79,13 @@ let config = {
 			}
 		},
 		{
-			module: "compliments",
-			position: "lower_third"
-		},
-		{
-			module: "WB-weather",
-			position: "bottom-bar",
-			config: {
-				apiKey: "NONE",
-				latitude: 0,
-				longitude: 0,
-			},
-		},
-		{
 			module: "newsfeed",
-			position: "top-bar",
+			position: "lower_third",
 			config: {
 				feeds: [
 					{
-						title: "Philippine Times",
-						url: "https://www.manilatimes.net/news/national/feed/"
+						title: "Philstar Headlines",
+						url: "http://www.inquirer.net/fullfeed"
 					}
 				],
 				showSourceTitle: true,
@@ -90,6 +93,17 @@ let config = {
 				broadcastNewsFeeds: true,
 				broadcastNewsUpdates: true
 			}
+		},
+		{
+			module: "WallberryTheme/WB-weather",
+			position: "bottom_bar",
+			config: {
+				providerName: "pirateweather",
+				weatherEndpoint: "forecast",
+				apiKey: "M4fgPStHEEABTG85h27kecHfvx3fmaMJ",
+				lat: 10,
+				lon: 123,
+			},
 		},
 	]
 };
