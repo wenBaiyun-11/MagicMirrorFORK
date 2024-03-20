@@ -105,6 +105,58 @@ let config = {
 				lon: 123,
 			},
 		},
+		{
+			module: "MMM-OnSpotify",
+			position: "top_right",
+			config: {
+				// Spotify authentication (Authentication Service)
+				clientID: "62b60370dfb8457b87302f92338921d7",
+				clientSecret: "3af835446e024f90aee9492e9f47f6b2",
+				accessToken: "BQBdXG6YLqD9lBU252uRMjGHYT1IFEO_y07_x68dHvQWjJ1DHS2deZgEfYOoLb8gPkdd1ZKk4WGuTVmC0tKGwNZdDEmOkv6GYEF3pcgsWCkNZLio8vX_LbSV7QedJ1Awm96CQxrtzeLT1yykuZcmn3bEBpIXpCs05eD-H7k9L0DrvK7338edaHGWrwaZlOQHMs_TMn3FW-5Q-ZesNEyW87SD005Zjw",
+				refreshToken: "AQDcXUfvUwB5cAWjr56QZV8fuDARH1gBAB3oTFX3uQMWxrT9J-kzszHz7eg2wsb1QKKQ7Hd561oXCoQOXh18ccSkackHws7nVZW6gIMGDISdHpjiMRNuUxLmn6C51Y9OtDg",
+				// General module options [SEE BELOW]
+				advertisePlayerTheme: true,
+				displayWhenEmpty: "none",
+				userAffinityUseTracks: false,
+				prefersLargeImageSize: false,
+				hideTrackLenghtAndAnimateProgress: false,
+				showDebugPalette: false,
+				userDataMaxAge: 14400,
+				userAffinityMaxAge: 36000,
+				deviceFilter: [],
+				deviceFilterExclude: false,
+				filterNoticeSubtitle: true,
+				language: "en",
+				// Update intervals [SEE BELOW]
+				isPlaying: 1,
+				isEmpty: 2,
+				isPlayingHidden: 2,
+				isEmptyHidden: 4,
+				onReconnecting: 4,
+				onError: 8,
+				// Animations [SEE BELOW]
+				mediaAnimations: false,
+				fadeAnimations: true,
+				textAnimations: true,
+				transitionAnimations: true,
+				// Spotify Code (EXPERMIENTAL)
+				spotifyCodeExperimentalShow: true,
+				spotifyCodeExperimentalUseColor: true,
+				spotifyCodeExperimentalSeparateItem: true,
+				// Theming General
+				roundMediaCorners: true,
+				roundProgressBar: true,
+				showVerticalPipe: true, 
+				useColorInProgressBar: true,
+				useColorInTitle: true,
+				useColorInUserData: true,
+				showBlurBackground: true,
+				blurCorrectionInFrameSide: true,
+				blurCorrectionInAllSides: false,
+				alwaysUseDefaultDeviceIcon: false,
+				experimentalCSSOverridesForMM2: false, // [SEE BELOW]
+			},
+		},
 	]
 };
 
