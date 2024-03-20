@@ -1,3 +1,5 @@
+const { zoom } = require("../js/defaults");
+
 /* MagicMirror² Config Sample
  *
  * By Michael Teeuw https://michaelteeuw.nl
@@ -35,6 +37,7 @@ let config = {
 	logLevel: ["INFO", "LOG", "WARN", "ERROR"], // Add "DEBUG" for even more logging
 	timeFormat: 12,
 	units: "metric",
+	zoom: 0.5,
 
 	modules: [
 		{
