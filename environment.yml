@@ -1,0 +1,9 @@
+name: OpiCV
+dependencies: 
+  - numpy
+  - pip
+  - pip:
+    - picamera2
+    - opencv-python
+    - face-recognition
+    - dlib
