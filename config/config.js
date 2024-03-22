@@ -37,7 +37,7 @@ let config = {
 	logLevel: ["INFO", "LOG", "WARN", "ERROR"], // Add "DEBUG" for even more logging
 	timeFormat: 12,
 	units: "metric",
-	zoom: 0.6,
+	zoom: 0.5,
 
 	modules: [
 		{
@@ -49,6 +49,16 @@ let config = {
 			  autoDimOn: true,
 			  unsplashAccessKey: "C0Uw7Qrq1uvf_9Wug2buL4mCYC6AvD6qWvjqaZWkVxg", // REQUIRED
 			  collections: "9822150" // optional - leave empty for a random photo
+			}
+		},
+		{
+			module: 'MMM-LCDControl',
+			config:
+			{
+				GPIO_PIR: 21,
+						GPIO_LCD_ONOFF: 20,
+						GPIO_LCD_STATUS: 12,
+						screenOffTimer: 30
 			}
 		},
 		{
