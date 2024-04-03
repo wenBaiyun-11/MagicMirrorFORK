@@ -41,6 +41,8 @@ let config = {
 		{
 			module: "WallberryTheme",
 			position: "fullscreen_below", // Required Position
+			animateIn: "fadeIn",
+			animateOut: "fadeOut",
 			config: {
 			  addBackgroundFade: ["top", "bottom"],
 			  backgroundOpacity: 0.5,
@@ -64,10 +66,12 @@ let config = {
 		},
 		{
 			module: "updatenotification",
+			animateIn: "fadeInDown",
 			position: "top_bar"
 		},
 		{
 			module: "WallberryTheme/WB-clock",
+			animateIn: "faceIn",
 			position: "top_left",
 			config: {
 				localCityName: "Cebu City",
