@@ -1,5 +1,3 @@
-const { zoom } = require("../js/defaults");
-
 /* MagicMirror² Config Sample
  *
  * By Michael Teeuw https://michaelteeuw.nl
@@ -56,9 +54,9 @@ let config = {
 			config:
 			{
 				GPIO_PIR: 21,
-						GPIO_LCD_ONOFF: 20,
-						GPIO_LCD_STATUS: 12,
-						screenOffTimer: 30
+				GPIO_LCD_ONOFF: 20,
+				GPIO_LCD_STATUS: 12,
+				screenOffTimer: 30
 			}
 		},
 		{
