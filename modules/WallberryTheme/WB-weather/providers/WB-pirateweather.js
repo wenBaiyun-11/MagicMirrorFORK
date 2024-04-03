@@ -58,7 +58,7 @@ class WBPirateWeather extends WBProviderWithHelper {
             let _day = new WBForecast();
             let _icon = null;
             _day.date = daily.time;
-            _day.precipChance = daily.humidity;
+            _day.precipChance = daily.humidity*100;
             _day.precipType = daily.precipType;
             _day.minTemp = daily.temperatureMin;
             _day.maxTemp = daily.temperatureMax;
