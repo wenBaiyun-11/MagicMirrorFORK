@@ -43,7 +43,7 @@ let config = {
 			position: "fullscreen_below", // Required Position
 			config: {
 			  addBackgroundFade: ["top", "bottom"],
-			  backgroundOpacity: 0.6,
+			  backgroundOpacity: 0.5,
 			  autoDimOn: true,
 			  unsplashAccessKey: "C0Uw7Qrq1uvf_9Wug2buL4mCYC6AvD6qWvjqaZWkVxg", // REQUIRED
 			  collections: "9822150" // optional - leave empty for a random photo
