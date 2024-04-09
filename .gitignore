@@ -59,6 +59,8 @@ Temporary Items
 
 # Ignore all modules except the default modules.
 /modules/**
+!/modules/MMM**
+!/modules/Wallberry**
 !/modules/default
 !/modules/default/**
 !/modules/README.md**
@@ -69,7 +71,6 @@ Temporary Items
 !/css/main.css
 
 # Ignore users config file but keep the sample.
-/config/*
 !/config/config.js.sample
 
 # Vim
@@ -81,3 +82,6 @@ Temporary Items
 *.orig
 *.rej
 *.bak
+
+##python environment
+/envs
