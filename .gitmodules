@@ -1,0 +1,7 @@
+[submodule "MMM-LCDControl"]
+    path = modules/MMM-LCDControl
+    url = git://github.com/wenbaiyun-11/MMM-LCDControl.git
+
+[submodule "MMM-OnSpotify"]
+    path = modules/MMM-OnSpotify
+    url = git://github.com/wenbaiyun-11/MMM-OnSpotify.git
