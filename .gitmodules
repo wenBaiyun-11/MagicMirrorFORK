@@ -1,7 +1,12 @@
-[submodule "MMM-LCDControl"]
+[submodule "modules/MMM-LCDControl"]
     path = modules/MMM-LCDControl
-    url = git://github.com/wenbaiyun-11/MMM-LCDControl.git
+    url = https://github.com/wenbaiyun-11/MMM-LCDControl.git
 
-[submodule "MMM-OnSpotify"]
+[submodule "modules/MMM-OnSpotify"]
     path = modules/MMM-OnSpotify
-    url = git://github.com/wenbaiyun-11/MMM-OnSpotify.git
+    url = https://github.com/wenbaiyun-11/MMM-OnSpotify.git
+    
+[submodule "modules/MMM-Remote-Control"]
+	path = modules/MMM-Remote-Control
+	url = https://github.com/wenBaiyun-11/MMM-Remote-Control.git
+
