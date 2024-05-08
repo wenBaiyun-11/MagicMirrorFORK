@@ -21,3 +21,6 @@
 [submodule "modules/MMM-LookingGlass"]
     path = modules/MMM-LookingGlass
     url = https://github.com/wenbaiyun-11/MMM-LookingGLass.git
+[submodule "modules/MMM-FrameLight"]
+	path = modules/MMM-FrameLight
+	url = https://github.com/RaspiManu/MMM-FrameLight.git
