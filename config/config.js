@@ -119,7 +119,17 @@ var config
         colorDark: "#fff",
         colorLight: "#000"
       }
-    }
+    },
+    {
+      module: "MMM-GoogleAssistant",
+      configDeepMerge: true,
+      config: {
+        assistantConfig: {
+          latitude: 10,
+          longitude: 123,
+        },
+      }
+    },
   ],
   useHttps: false,
   httpsPrivateKey: "",
