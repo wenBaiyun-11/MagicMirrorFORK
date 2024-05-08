@@ -10,3 +10,14 @@
 	path = modules/MMM-Remote-Control
 	url = https://github.com/wenBaiyun-11/MMM-Remote-Control.git
 
+[submodule "modules/MMM-QRCode"]
+	path = modules/MMM-QRCode
+	url = https://github.com/uxigene/MMM-QRCode.git
+	
+[submodule "modules/MMM-GoogleAssistant"]
+	path = modules/MMM-GoogleAssistant
+	url = https://github.com/bugsounet/MMM-GoogleAssistant.git
+
+[submodule "modules/MMM-LookingGlass"]
+    path = modules/MMM-LookingGlass
+    url = https://github.com/wenbaiyun-11/MMM-LookingGLass.git
