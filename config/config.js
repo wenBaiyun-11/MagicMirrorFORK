@@ -17,7 +17,7 @@ var config
       config: {
         showModuleApiMenu: true,
         secureEndpoints: true,
-        apiKey: "test"
+        apiKey: "test123"
       }
     },
     {
@@ -114,9 +114,11 @@ var config
     {
       module: "MMM-QRCode",
       position: "left",
-      header: "",
+      header: "Connect to Companion",
       config: {
-        text: "{\"apiKey\":\"test\", \"Ip\":\"192.168.1.10\"}",
+        apiKey: "test123",
+        text: "HELLO WORLD!",
+        useQRconnection: true,
         showRaw: false,
         imageSize: 150,
         colorDark: "#fff",
