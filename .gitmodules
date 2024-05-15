@@ -1,7 +1,3 @@
-[submodule "modules/MMM-LCDControl"]
-    path = modules/MMM-LCDControl
-    url = https://github.com/wenbaiyun-11/MMM-LCDControl.git
-
 [submodule "modules/MMM-OnSpotify"]
     path = modules/MMM-OnSpotify
     url = https://github.com/wenbaiyun-11/MMM-OnSpotify.git
@@ -13,14 +9,3 @@
 [submodule "modules/MMM-QRCode"]
 	path = modules/MMM-QRCode
 	url = https://github.com/uxigene/MMM-QRCode.git
-	
-[submodule "modules/MMM-GoogleAssistant"]
-	path = modules/MMM-GoogleAssistant
-	url = https://github.com/bugsounet/MMM-GoogleAssistant.git
-
-[submodule "modules/MMM-LookingGlass"]
-    path = modules/MMM-LookingGlass
-    url = https://github.com/wenbaiyun-11/MMM-LookingGLass.git
-[submodule "modules/MMM-FrameLight"]
-	path = modules/MMM-FrameLight
-	url = https://github.com/RaspiManu/MMM-FrameLight.git
