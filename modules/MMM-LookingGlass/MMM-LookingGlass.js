@@ -1,9 +1,13 @@
 Module.register("MMM-LookingGlass", {
     // Default module config.
     defaults: {
-      text: "Hello World!",
+      ledCount: 0,
     },
-  
+    
+
+    start: function () {
+      console.log("Starting LookingGlass")
+    },
     // Override dom generator.
     getDom: function () {
       var wrapper = document.createElement("div");
