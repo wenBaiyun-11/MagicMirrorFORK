@@ -2,7 +2,7 @@
 
 var config
 = {
-  address: "192.168.1.10",
+  address: "0.0.0.0",
   ipWhitelist: [
     "192.168.1.0/24",
     "127.0.0.1",
@@ -32,10 +32,6 @@ var config
       }
     },
     {
-      module: "MMM-LCDControl",
-      config: {}
-    },
-    {
       module: "alert",
       config: {}
     },
@@ -55,16 +51,23 @@ var config
     },
     {
       module: "calendar",
-      header: "Philippine Holidays",
+      header: "Your Events",
       position: "top_left",
       animateIn: "slideInLeft",
       animateOut: "slideOutLeft",
+      updateOnFetch: "false",
       config: {
         calendars: [
           {
-            fetchInterval: 604800000,
+            fetchInterval: 680000,
             symbol: "calendar-check",
             url: "https://ics.calendarlabs.com/63/a9fe3549/Philippines_Holidays.ics"
+          },
+          {
+            fetchInterval: 20000,
+            symbol: "star",
+            url: "https://calendar.google.com/calendar/ical/king0fskiez11%40gmail.com/private-a71c8ac945f910e56e98401608c04e99/basic.ics"
+
           }
         ]
       }
