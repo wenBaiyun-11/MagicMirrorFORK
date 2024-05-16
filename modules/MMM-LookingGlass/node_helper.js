@@ -1,5 +1,5 @@
 const NodeHelper = require("node_helper");
-const spawn = require('child_process').spawn
+const exec = require('child_process').execFile
 
 module.exports = NodeHelper.create({
     start: function () {
@@ -9,11 +9,10 @@ module.exports = NodeHelper.create({
     socketNotificationReceived: function(notification, payload) {
         switch (notification) {
             case "COLOR_FILL":
-                spawn('sudo python3', [`${this.path}/utils/neoPixelSpydev.py`, payload.r, payload.g, payload.b, payload.ledCount]).stdout.on('data', data => this.sendSocketNotification('debug', data.toString()));
-                console.log('LED IS TURNED ON!');
+                exec('sudo python3', [`${this.path}/utils/neoPixelSpydev.py`, `${payload.r} ${payload.g} ${payload.b} ${payload.ledCount}`]);
                 break;
             case "TURN_OFF":
-                spawn('sudo python3', [`${this.path}/utils/neoPixelSpydev.py`, 0, 0, 0, payload.ledCount]).stdout.on('data', data => this.sendSocketNotification('debug', data.toString()));
+                exec('sudo python3', [`${this.path}/utils/neoPixelSpydev.py`, `0`, `0`, `0`, `${payload.ledCount}`]);
                 console.log('LED IS TURNED OFF!');
                 break;
             default:

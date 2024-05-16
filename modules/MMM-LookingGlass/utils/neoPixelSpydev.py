@@ -17,4 +17,4 @@ def main():
     ws.write(controller, fillSpace)
 
 if __name__ == '__main__':
-    main()
+    print('NOTHING')
