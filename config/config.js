@@ -4,7 +4,7 @@ var config
 = {
   address: "0.0.0.0",
   ipWhitelist: [
-    "192.168.1.0/24",
+    "192.168.43.0/24",
     "127.0.0.1",
     "::ffff:127.0.0.1",
     "::1"
@@ -123,6 +123,12 @@ var config
         imageSize: 150,
         colorDark: "#fff",
         colorLight: "#000"
+      }
+    },
+    {
+      module: "MMM-LookingGlass",
+      config: {
+        ledCount: 86,
       }
     },
   ],
