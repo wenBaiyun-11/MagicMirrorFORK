@@ -12,7 +12,7 @@ module.exports = NodeHelper.create({
                 exec('sudo python3', [`${this.path}/utils/neoPixelSpydev.py`, `${payload.r} ${payload.g} ${payload.b} ${payload.ledCount}`]);
                 break;
             case "TURN_OFF":
-                exec('sudo python3', [`${this.path}/utils/neoPixelSpydev.py`, `0`, `0`, `0`, `${payload.ledCount}`]);
+                exec('sudo python3', [`${this.path}/utils/neoPixelSpydev.py 0 0 0` , `${payload.ledCount}`]);
                 console.log('LED IS TURNED OFF!');
                 break;
             default:
