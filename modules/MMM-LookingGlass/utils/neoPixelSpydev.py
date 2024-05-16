@@ -5,16 +5,12 @@ import sys
 controller = spd.SpiDev()
 controller.open(0,0)
 
-def main():
-    r = sys.argv[1]
-    g = sys.argv[2]
-    b = sys.argv[3]
-    ledCount = sys.argv[4]
 
-    colorMap = [r, g, b]
-    fillSpace = [colorMap]*ledCount
+r = sys.argv[1]
+g = sys.argv[2]
+b = sys.argv[3]
+ledCount = sys.argv[4]
 
-    ws.write(controller, fillSpace)
-
-if __name__ == '__main__':
-    main()
+colorMap = [r, g, b]
+fillSpace = [colorMap]*ledCount
+ws.write2812(controller, fillSpace)
