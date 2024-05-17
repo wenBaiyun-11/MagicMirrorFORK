@@ -12,15 +12,13 @@ module.exports = NodeHelper.create({
 /*                 pyShell.PythonShell.run(`utils/neoPixelSpydev.py`, { args : [`${payload.r}`,`${payload.g}`,`${payload.b}`,`${payload.ledCount}`]}).then(msg => {
                     console.log(msg);
                 }) */
-                cmd.run(`sudo python3 ".${this.path}/utils/neoPixelSpydev.py" ${payload.r} ${payload.g} ${payload.b} ${payload.ledCount}`);
-                console.log('LED IS TURNED ON!');
+                cmd.run(`sudo python3 "utils/neoPixelSpydev.py" ${payload.r} ${payload.g} ${payload.b} ${payload.ledCount}`);
                 break;
             case "TURN_OFF":
-                cmd.run(`sudo python3 ".${this.path}/utils/neoPixelSpydev.py" 0 0 0 ${payload.ledCount}`);
+                cmd.run(`sudo python3 "utils/neoPixelSpydev.py" 0 0 0 ${payload.ledCount}`);
 /*                 pyShell.PythonShell.run(`utils/neoPixelSpydev.py`, { args : [`0`,`0`,`0`,`${payload.ledCount}`]}).then(msg => {
                     console.log(msg);
                 }) */
-                console.log('LED IS TURNED OFF!');
                 break;
             default:
                 break;

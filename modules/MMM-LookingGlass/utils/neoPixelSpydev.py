@@ -2,6 +2,8 @@ import spidev as spd
 import ws2812 as ws
 import sys
 
+print('Executing')
+
 controller = spd.SpiDev()
 controller.open(0,0)
 
