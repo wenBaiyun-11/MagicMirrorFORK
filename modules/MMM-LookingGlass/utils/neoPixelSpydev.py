@@ -6,10 +6,10 @@ controller = spd.SpiDev()
 controller.open(0,0)
 
 
-r = sys.argv[1]
-g = sys.argv[2]
-b = sys.argv[3]
-ledCount = sys.argv[4]
+r = int(sys.argv[1])
+g = int(sys.argv[2])
+b = int(sys.argv[3])
+ledCount = int(sys.argv[4])
 
 colorMap = [r, g, b]
 fillSpace = [colorMap]*ledCount
