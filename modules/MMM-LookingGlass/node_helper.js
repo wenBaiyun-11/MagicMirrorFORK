@@ -1,5 +1,5 @@
 const NodeHelper = require("node_helper");
-const cmd = require('node-cmd')
+const exec = require('child_process').exec
 
 module.exports = NodeHelper.create({
     start: function () {
@@ -9,16 +9,14 @@ module.exports = NodeHelper.create({
     socketNotificationReceived: function(notification, payload) {
         switch (notification) {
             case "COLOR_FILL":
-/*                 pyShell.PythonShell.run(`utils/neoPixelSpydev.py`, { args : [`${payload.r}`,`${payload.g}`,`${payload.b}`,`${payload.ledCount}`]}).then(msg => {
-                    console.log(msg);
-                }) */
-                cmd.run(`sudo python3 "utils/neoPixelSpydev.py" ${payload.r} ${payload.g} ${payload.b} ${payload.ledCount}`);
+                    exec(`sudo python3 "${this.path}/utils/neoPixelSpydev.py" ${payload.b} ${payload.g} ${payload.b} ${payload.ledCount}`, function(error, stdout, stderr){
+                        console.log(stdout);
+                    });
                 break;
-            case "TURN_OFF":
-                cmd.run(`sudo python3 "utils/neoPixelSpydev.py" 0 0 0 ${payload.ledCount}`);
-/*                 pyShell.PythonShell.run(`utils/neoPixelSpydev.py`, { args : [`0`,`0`,`0`,`${payload.ledCount}`]}).then(msg => {
-                    console.log(msg);
-                }) */
+                case "TURN_OFF":
+                    exec(`sudo python3 "${this.path}/utils/neoPixelSpydev.py" 0 0 0 ${payload.ledCount}`, function(error, stdout, stderr){
+                        console.log(stdout);
+                    });
                 break;
             default:
                 break;
